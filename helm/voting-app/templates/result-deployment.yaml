@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: result
+  labels:
+    app: result
+    {{- include "voting-app.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.result.replicaCount }}
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      app: result
+  template:
+    metadata:
+      labels:
+        app: result
+    spec:
+      {{- include "voting-app.imagePullSecrets" . | nindent 6 }}
+      containers:
+        - name: result
+          image: {{ include "voting-app.image" (dict "root" $ "image" .Values.result.image) }}
+          imagePullPolicy: {{ .Values.result.image.pullPolicy }}
+          ports:
+            - name: result
+              containerPort: {{ .Values.result.service.targetPort }}
+              protocol: TCP
+          readinessProbe:
+            httpGet:
+              path: /
+              port: result
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /
+              port: result
+            initialDelaySeconds: 15
+            periodSeconds: 10

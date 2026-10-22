@@ -1,0 +1,18 @@
+aws_region         = "us-east-1"
+cluster_name       = "voting-app-eks"
+kubernetes_version = "1.37"
+
+node_instance_types = ["t3.medium"]
+node_desired_size   = 2
+node_min_size       = 1
+node_max_size       = 3
+
+# Replace this with your administrator public IP or CIDR. The scripts derive
+# it automatically, but an explicit value is safer for repeatable plans.
+endpoint_public_access_cidrs = ["203.0.113.10/32"]
+
+environment = "dev"
+
+tags = {
+  Project = "example-voting-app"
+}

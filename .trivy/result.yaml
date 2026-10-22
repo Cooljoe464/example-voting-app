@@ -1,0 +1,167 @@
+# Temporary, service-scoped Trivy exceptions. See .trivy/README.md.
+vulnerabilities:
+  - id: CVE-2023-31484
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2024-21538
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2024-37890
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2024-45296
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2024-45590
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2024-52798
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2025-32988
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2025-32990
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2025-6020
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2025-64756
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2025-68973
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-102276
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-102278
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-103111
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-13149
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-13221
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-14257
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-23745
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-23950
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-24842
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-26960
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-26996
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-27903
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-27904
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-29786
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-31802
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-33151
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-33845
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-33846
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-3833
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-42009
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-42010
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-42496
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-42497
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-4867
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-48779
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-4878
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-48815
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-48962
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-57432
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-57433
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-59724
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-59725
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-59873
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-59874
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-69152
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-69185
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-69192
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-73566
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-8376
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-86145
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-89157
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-89161
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-90711
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-9496
+    statement: "Temporary exception for the pinned Node 18/Debian 12 base image and existing result dependencies; review with the runtime and dependency refresh."
+    expired_at: 2027-01-31

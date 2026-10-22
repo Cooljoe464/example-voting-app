@@ -1,0 +1,59 @@
+global:
+  imageRegistry: ""
+  imagePullSecrets: []
+
+vote:
+  replicaCount: 1
+  image:
+    repository: voting-app/vote
+    tag: ministack
+    pullPolicy: IfNotPresent
+  service:
+    type: NodePort
+    port: 8080
+    targetPort: 8080
+    nodePort: 31000
+
+result:
+  replicaCount: 1
+  image:
+    repository: voting-app/result
+    tag: ministack
+    pullPolicy: IfNotPresent
+  service:
+    type: NodePort
+    port: 8081
+    targetPort: 8080
+    nodePort: 31001
+
+worker:
+  replicaCount: 1
+  image:
+    repository: voting-app/worker
+    tag: ministack
+    pullPolicy: IfNotPresent
+
+redis:
+  replicaCount: 1
+  image:
+    repository: voting-app/redis
+    tag: 8.10.2-alpine
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 6379
+    targetPort: 6379
+
+db:
+  replicaCount: 1
+  image:
+    repository: voting-app/db
+    tag: 15.19-alpine
+    pullPolicy: IfNotPresent
+  auth:
+    username: postgres
+    password: postgres
+  service:
+    type: ClusterIP
+    port: 5432
+    targetPort: 5432

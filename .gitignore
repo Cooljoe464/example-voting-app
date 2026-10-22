@@ -3,4 +3,25 @@ project.lock.json
 bin/
 obj/
 .vs/
+.idea/
 node_modules/
+
+# act
+.secrets
+
+# Terraform
+.terraform/
+.kube/
+.terraform.tfstate.lock.info
+terraform.tfstate.d/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc

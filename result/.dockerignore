@@ -1,1 +1,13 @@
 node_modules/
+.git
+.gitignore
+.env
+npm-debug.log*
+tests/
+docker-compose.test.yml
+coverage/
+.nyc_output/
+*.md
+.DS_Store
+Dockerfile
+.dockerignore

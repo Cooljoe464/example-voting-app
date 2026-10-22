@@ -1,0 +1,8 @@
+# Temporary, service-scoped Trivy exceptions. See .trivy/README.md.
+vulnerabilities:
+  - id: CVE-2026-23949
+    statement: "Temporary exception for the pinned Python base image and build tooling; review with the base image refresh."
+    expired_at: 2027-01-31
+  - id: CVE-2026-24049
+    statement: "Temporary exception for the pinned Python base image and build tooling; review with the base image refresh."
+    expired_at: 2027-01-31

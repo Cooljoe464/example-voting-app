@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db
+  labels:
+    app: db
+    {{- include "voting-app.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.db.replicaCount }}
+  selector:
+    matchLabels:
+      app: db
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      {{- include "voting-app.imagePullSecrets" . | nindent 6 }}
+      containers:
+        - name: postgres
+          image: {{ include "voting-app.image" (dict "root" $ "image" .Values.db.image) }}
+          imagePullPolicy: {{ .Values.db.image.pullPolicy }}
+          env:
+            - name: POSTGRES_USER
+              value: {{ .Values.db.auth.username | quote }}
+            - name: POSTGRES_PASSWORD
+              value: {{ .Values.db.auth.password | quote }}
+          ports:
+            - name: postgres
+              containerPort: {{ .Values.db.service.targetPort }}
+              protocol: TCP
+          volumeMounts:
+            - name: db-data
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: db-data
+          emptyDir: {}

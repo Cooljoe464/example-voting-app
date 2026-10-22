@@ -1,0 +1,10 @@
+.git
+.gitignore
+__pycache__/
+*.py[cod]
+posta
+postb
+*.md
+.DS_Store
+Dockerfile
+.dockerignore

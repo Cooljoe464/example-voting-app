@@ -11,7 +11,7 @@ services:
       redis:
         condition: service_healthy
     healthcheck: 
-      test: ["CMD", "curl", "-f", "http://localhost"]
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
       interval: 15s
       timeout: 5s
       retries: 3
@@ -19,7 +19,11 @@ services:
     volumes:
      - ./vote:/usr/local/app
     ports:
-      - "8080:80"
+      - "8080:8080"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
     networks:
       - front-tier
       - back-tier
@@ -34,8 +38,12 @@ services:
     volumes:
       - ./result:/usr/local/app
     ports:
-      - "8081:80"
+      - "8081:8080"
       - "127.0.0.1:9229:9229"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
     networks:
       - front-tier
       - back-tier
@@ -48,11 +56,15 @@ services:
         condition: service_healthy 
       db:
         condition: service_healthy 
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
     networks:
       - back-tier
 
   redis:
-    image: redis:alpine
+    image: redis:8.10.2-alpine@sha256:615b4cedaff0c1437a1548acae4222572df8c021eeb7382d64cb8b5e3a13ac7a
     volumes:
       - "./healthchecks:/healthchecks"
     healthcheck:
@@ -62,7 +74,7 @@ services:
       - back-tier
 
   db:
-    image: postgres:15-alpine
+    image: postgres:15.19-alpine@sha256:d2c2ced0372e855e4c257a9e9b5725f403847c01cfb64facbf2b21dbdadb2d74
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "postgres"
@@ -84,6 +96,10 @@ services:
     depends_on:
       vote:
         condition: service_healthy 
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
     networks:
       - front-tier
     restart: "no"

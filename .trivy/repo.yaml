@@ -1,0 +1,89 @@
+# Temporary, repository-scoped Trivy exceptions. See .trivy/README.md.
+vulnerabilities:
+  - id: CVE-2024-45590
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2026-59724
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2026-59725
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2024-45296
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2024-52798
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2026-4867
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2026-90711
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2026-33151
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2026-69185
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2024-37890
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+  - id: CVE-2026-48779
+    paths:
+      - result/package-lock.json
+    statement: "Existing result dependency version; dependency refresh is tracked."
+    expired_at: 2027-01-31
+
+misconfigurations:
+  - id: KSV-0014
+    paths:
+      - k8s-specifications/*-deployment.yaml
+    statement: "Upstream demo manifests; runtime securityContext hardening is tracked separately."
+    expired_at: 2027-01-31
+  - id: KSV-0118
+    paths:
+      - k8s-specifications/*-deployment.yaml
+    statement: "Upstream demo manifests; runtime securityContext hardening is tracked separately."
+    expired_at: 2027-01-31
+  - id: DS-0002
+    paths:
+      - result/tests/Dockerfile
+    statement: "Upstream test harness Dockerfile is not built or published by this workflow."
+    expired_at: 2027-01-31
+  - id: AWS-0039
+    paths:
+      - terraform-aws-modules/eks/aws/main.tf
+    statement: "EKS secrets use the AWS-managed key by design; a customer KMS key is intentionally avoided to keep destroy clean."
+    expired_at: 2027-01-31
+  - id: AWS-0040
+    paths:
+      - terraform-aws-modules/eks/aws/main.tf
+    statement: "Public EKS endpoint is intentional and restricted to the administrator CIDR."
+    expired_at: 2027-01-31
+  - id: AWS-0104
+    paths:
+      - terraform-aws-modules/eks/aws/node_groups.tf
+    statement: "Default node group egress is required for managed nodes and addons."
+    expired_at: 2027-01-31

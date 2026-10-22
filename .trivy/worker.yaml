@@ -1,0 +1,86 @@
+# Temporary, service-scoped Trivy exceptions. See .trivy/README.md.
+vulnerabilities:
+  - id: CVE-2020-16156
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2021-24112
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2022-1304
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2023-31484
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2023-50387
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2023-50868
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2024-0553
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2024-0567
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2024-32655
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2024-37370
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2024-37371
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2025-32988
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2025-32990
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2025-6020
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2025-68973
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2025-69421
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-28387
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-28388
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-28389
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-28390
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-33845
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-33846
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-3833
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-40355
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-40356
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-42009
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-42010
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
+  - id: CVE-2026-45447
+    statement: "Temporary exception for the EOL .NET 7 runtime base image and existing worker dependencies; review with the .NET runtime upgrade."
+    expired_at: 2027-01-31
